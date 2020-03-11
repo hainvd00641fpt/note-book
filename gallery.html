@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery page</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
+    <!-- <script type="text/javascript" src="assets/js/main.js"></script> -->
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar-main">
+            <div class="header-start">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/logo.png" alt="logo" height="61px">
+                </a>
+            </div>
+            <nav id="navbar-menu">
+                <ul class="nav">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about_us.html">about us</a></li>
+                    <li><a href="course.html">courses</a></li>
+                    <li><a href="class.html">class</a></li>
+                    <li><a href="gallery.html" class="active">gallery</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                </ul>
+            </nav>
+            <nav id="navbar-search" style="width: 700px;">
+                <div class="btn-group" style="width:100%">
+                    <input id="searchinput" type="search" class="form-control" placeholder="Searching..." style="width:100%">
+                    <span id="searchclear" class="glyphicon glyphicon-remove-circle"></span>
+                </div>
+            </nav>
+            <div class="header-end">
+                <div class="icon-search"><img style="width: 50%" src="./assets/img/icon/search.png" alt="icon-search"></div>
+                <button class="btn btn-header" data-toggle="modal" data-target="#exampleModal">Sign in</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Body -->
+    <div>
+        <div class="galary-head container-cust">
+            <div class='galary-header'>
+                <h3>galeries</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et egestas nunc tortor, metus,
+                    rhoncus donec. Duis bibendum id aliquam, condimentum pharetra tristique. Pellentesque sed integer et
+                    placerat arcu neque dignissim in nisl. Vestibulum lectus dolor placerat proin. Convallis nibh mattis
+                    eu hendrerit lectus facilisis. Sapien consectetur aliquam donec id hendrerit mauris ipsum sagittis.
+                </p>
+            </div>
+            <div class="galary-body">
+                <div class="tab galary-header-bot">
+                    <button class="tablinks" onclick="openCity(event, 'page1')" id="defaultOpen">
+                        <h4 class="active">student works</h4>
+                    </button>
+                    <button class="tablinks" onclick="openCity(event, 'page2')">
+                        <h4>teacher collection</h4>
+                    </button>
+                </div>
+
+                <div id="page1" class="tabcontent">
+                    <div class="row">
+                        <div class="col-3 list-unstyled" id="lightgallery-1">
+                            <div class="square square-256" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="square square-230" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="square square-271" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="square square-230" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="square square-195" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3" id="lightgallery-2">
+                            <div class="square square-180" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="square square-249" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="square square-252" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="square square-249" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="square square-252" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3" id="lightgallery-3">
+                            <div class="square square-286" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="square square-231" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="square square-271" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="square square-231" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="square square-165" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3" id="lightgallery-4">
+                            <div class="square square-224" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="square square-345" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="square square-156" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="square square-345" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="square square-112" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 200px;" class="navigation container-cust">
+                        <div class="pagination">
+                            <div class="navigation-div">
+                                <a href="javascript:void(0);" class="pre-pagi">
+                                    <img src="./assets/img/icon/vector2.png" alt="">
+                                </a>
+                                <a href="javascript:void(0);" class="active btn-pagi" id="pagi-1">1</a>
+                                <a href="javascript:void(0);" class="btn-pagi" id="pagi-2">2</a>
+                                <a href="javascript:void(0);" class="btn-pagi" id="pagi-3">3</a>
+                                <a href="javascript:void(0);" class="btn-pagi" id="pagi-4">4</a>
+                                <a href="javascript:void(0);" class="next-pagi">
+                                    <img style="transform: scaleX(-1);" src="./assets/img/icon/vector2.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div>
+                        <div class="masonry" id="lightgallery">
+                            <div class="masonry-item" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <img src="./assets/img/img.png" class="masonry-image" alt="">
+                                <div class="masonry-overlay">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="masonry-item" data-src="./assets/img/img.png" data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <img src="./assets/img/letter/letter1.png" class="masonry-image" alt="">
+                                <div class="masonry-overlay">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="masonry-item" data-src="./assets/img/img.png" data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <img src="./assets/img/letter/letter2.png" class="masonry-image" alt="">
+                                <div class="masonry-overlay">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="masonry-item" data-src="./assets/img/img.png" data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <img src="./assets/img/letter/letter3.png" class="masonry-image" alt="">
+                                <div class="masonry-overlay">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                            <div class="masonry-item" data-src="./assets/img/img.png" data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>"
+                                style="background-image: url('./assets/img/img.png');">
+                                <img src="./assets/img/letter/letter4.png" class="masonry-image" alt="">
+                                <div class="masonry-overlay">
+                                    <h5>VU MINH QUANG<br />D1809M</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div id="page2" class="tabcontent">
+                    <div class="row">
+                        <div class="col-3 list-unstyled" id="lightgallery-5">
+                            <div class="square square-256" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                            <div class="square square-230" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                            <div class="square square-271" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                            <div class="square square-230" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                            <div class="square square-195" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3" id="lightgallery-6">
+                            <div class="square square-180" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                            <div class="square square-249" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                            <div class="square square-252" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                            <div class="square square-249" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                            <div class="square square-252" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3" id="lightgallery-7">
+                            <div class="square square-286" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                            <div class="square square-231" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                            <div class="square square-271" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                            <div class="square square-231" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                            <div class="square square-165" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3" id="lightgallery-8">
+                            <div class="square square-224" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                            <div class="square square-345" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                            <div class="square square-156" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                            <div class="square square-345" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                            <div class="square square-112" data-src="./assets/img/img.png"
+                                data-sub-html="<h4>VU MINH QUANG</h4><p>D1809M</p>" style="background-image: url('./assets/img/img.png');">
+                                <div class="background-square">
+                                    <h5>VU MINH QUANG</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 200px;" class="navigation container-cust">
+                        <div class="pagination">
+                            <div class="navigation-div">
+                                <a href="javascript:void(0);" class="pre-pagis">
+                                    <img src="./assets/img/icon/vector2.png" alt="">
+                                </a>
+                                <a href="javascript:void(0);" class="active btn-pagis" id="pagis-1">1</a>
+                                <a href="javascript:void(0);" class="btn-pagis" id="pagis-2">2</a>
+                                <a href="javascript:void(0);" class="btn-pagis" id="pagis-3">3</a>
+                                <a href="javascript:void(0);" class="btn-pagis" id="pagis-4">4</a>
+                                <a href="javascript:void(0);" class="next-pagis">
+                                    <img style="transform: scaleX(-1);" src="./assets/img/icon/vector2.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="message">
+        <img src="./assets/img/icon/message.png" alt="">
+            </div>
+            <!-- modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="login modal-content">
+                        <div class="wrapper">
+                            <div class="wrapper-left float-left">
+                                <h3>hello, friend!</h3>
+                                <p>Enter your personal details and start journey with us</p>
+                                <a href="register.html"><button class="button button6">Sign up</button></a>
+                            </div>
+                            <div class="wrapper-right float-left">
+                                <img class="close close-modal" data-dismiss="modal" aria-label="Close"
+                                    src="./assets/img/icon/close.png" alt="">
+                                <h5>Sign in to Walking Whale</h5>
+                                <button class="btn btn-connect"><img src="./assets/img/icon/facebook1.png"
+                                        alt="">Connect with Facebook</button>
+                                <h6 class="line-left"></h6>
+                                <p>Or</p>
+                                <h6 class="line-right"></h6>
+                                <form>
+                                    <div class="form-div">
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput">Usename</label>
+                                            <input type="text" class="form-control" placeholder="Walkingwhale04">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput2">Password</label>
+                                            <input type="text" class="form-control" placeholder="+8 character">
+                                        </div>
+                                    </div>
+                                    <button class="btn button4 sign-in">Sign in</button>
+                                    <a href="#">
+                                        <p class="f-password">Forgot password?</p>
+                                    </a>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                    </div>
+                                    <a href="#">
+                                        <p class="new-account">Create a new account?</p>
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Body -->
+
+            <footer>
+                <div class="container-cust footer-card-img text-center">
+                    <div class="footer-card-img-text">
+                        <h2>get start your free month</h2>
+                        <h5>Unlimited access to thousands of our Courses</h5>
+                        <a href="#"><button class="btn btn-outline-light footer-card-img-btn">GO PREMIUM</button></a>
+                    </div>
+                </div>
+                <div class="footer-background-block">
+                    <div class="container-cust">
+                        <div class="footer-block">
+                            <div class="row footer-block-content">
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="footer-title">
+                                                Phone
+                                            </div>
+                                            <div class="footer-detail">
+                                                +84 0123 456 789
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="footer-title">
+                                                Mail
+                                            </div>
+                                            <div class="footer-detail">
+                                                walking.whale@gmail.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding-top: 40px;">
+                                        <div class="col">
+                                            <div class="footer-title">
+                                                Address
+                                            </div>
+                                            <div class="footer-detail">
+                                                80 truc khe <br />
+                                                nguyen chi thanh, hanoi
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="footer-title">
+                                                Follow us
+                                            </div>
+                                            <div class="footer-detail">
+                                                <ul class="social-media-list">
+                                                    <li><a href="#"><img src="./assets/img/icon/facebook-color.png"
+                                                                alt="Facebook" title="Facebook"></a></li>
+                                                    <li><a href="#"><img src="./assets/img/icon/youtube-color.png"
+                                                                alt="Youtube" title="Youtube"></a></li>
+                                                    <li><a href="#"><img src="./assets/img/icon/instagram-color.png"
+                                                                alt="Instagram" title="Instagram"></a></li>
+                                                    <li><a href="#"><img src="./assets/img/icon/twitter-color.png"
+                                                                alt="Twitter" title="Twitter"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row footer-subcribe">
+                                        <div class="col">
+                                            <div class="footer-subcribe-title">
+                                                Subscribe to news
+                                            </div>
+                                            <div class="footer-subcribe-subtitle">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            </div>
+                                            <div style="padding-top: 5px;">
+                                                <input style="padding-left: 18px;" class="footer-email " type="email"
+                                                    placeholder="Enter your email">
+                                                <button class="btn footer-submit-email">Send</button>
+                                            </div>
+                                            <div class="form-check footer-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">I agree with
+                                                    terms</label>
+                                            </div>
+                                            <div
+                                                style="padding-top: 10px; color: #AAAAAA; font-size: 14px; line-height: 22px;">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum
+                                                dolor si
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div>
+                                        <img src="assets/img/logo-footer.png" alt="logo-footer">
+                                    </div>
+                                    <div class="footer-description">
+                                        Walking Whale was built with the positioning to become a pioneer in providing
+                                        advertising photography training services in Vietnam. It is the gathering place
+                                        of leading experts along the job network, career exchange for the community.
+                                        Thereby, empowering and awareness of the profession of photography for society
+                                        and aesthetic development for the public.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-end">
+                </div>
+            </footer>
+</body>
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+<script src="./assets/js/light-gallery/lightgallery.js"></script>
+<script src="./assets/js/light-gallery/lg-pager.js"></script>
+<script src="./assets/js/light-gallery/lg-autoplay.js"></script>
+<script src="./assets/js/light-gallery/lg-fullscreen.js"></script>
+<script src="./assets/js/light-gallery/lg-zoom.js"></script>
+<script src="./assets/js/light-gallery/lg-hash.js"></script>
+<script src="./assets/js/light-gallery/lg-share.js"></script>
+<script>
+    lightGallery(document.getElementById('lightgallery-1'));
+    lightGallery(document.getElementById('lightgallery-2'));
+    lightGallery(document.getElementById('lightgallery-3'));
+    lightGallery(document.getElementById('lightgallery-4'));
+    lightGallery(document.getElementById('lightgallery-5'));
+    lightGallery(document.getElementById('lightgallery-6'));
+    lightGallery(document.getElementById('lightgallery-7'));
+    lightGallery(document.getElementById('lightgallery-8'));
+</script>
+<script>
+    var index_pagi = 1
+    $('.btn-pagi').click(function () {
+        $('.btn-pagi').removeClass("active");
+        $(this).addClass("active");
+        index_pagi = $(this).attr('id').split('-')[1]
+    });
+    $('.next-pagi').click(function () {
+        if (index_pagi < 4) {
+            $('.btn-pagi').removeClass("active");
+            index_pagi += 1
+            $('#pagi-' + index_pagi).addClass("active");
+        }
+    });
+    $('.pre-pagi').click(function () {
+        if (index_pagi > 1) {
+            $('.btn-pagi').removeClass("active");
+            index_pagi -= 1
+            $('#pagi-' + index_pagi).addClass("active");
+        }
+    });
+
+    var index_pagis = 1
+        $('.btn-pagis').click(function () {
+            $('.btn-pagis').removeClass("active");
+            $(this).addClass("active");
+            index_pagis = $(this).attr('id').split('-')[1]
+        });
+        $('.next-pagis').click(function () {
+            if (index_pagis < 4) {
+                $('.btn-pagis').removeClass("active");
+                index_pagis += 1
+                $('#pagis-' + index_pagis).addClass("active");
+            }
+        });
+        $('.pre-pagis').click(function () {
+            if (index_pagis > 1) {
+                $('.btn-pagis').removeClass("active");
+                index_pagis -= 1
+                $('#pagis-' + index_pagis).addClass("active");
+            }
+        });
+</script>
+</html>

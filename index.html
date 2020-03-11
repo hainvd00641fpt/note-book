@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <style type="text/css">
+        .hide {
+          display: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar-main">
+            <div class="header-start">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/logo.png" alt="logo" height="61px">
+                </a>
+            </div>
+            <nav id="navbar-menu">
+                <ul class="nav">
+                    <li><a href="index.html" class="active">home</a></li>
+                    <li><a href="about_us.html">about us</a></li>
+                    <li><a href="course.html">courses</a></li>
+                    <li><a href="class.html">class</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                </ul>
+            </nav>
+            <nav id="navbar-search" style="width: 700px;">
+                <div class="btn-group" style="width:100%">
+                    <input id="searchinput" type="search" class="form-control" placeholder="Searching..." style="width:100%">
+                    <span id="searchclear" class="glyphicon glyphicon-remove-circle"></span>
+                </div>
+            </nav>
+            <div class="header-end">
+                <div class="icon-search"><img style="width: 50%" src="./assets/img/icon/search.png" alt="icon-search"></div>
+                <button class="btn btn-header" data-toggle="modal" data-target="#exampleModal">Sign in</button>
+            </div>
+        </div>
+    </header>
+
+<!-- Body -->
+<div style="height: 650px;" class="header-top">     
+    <div class="overlay container-cust">
+        <h3>IT'S READ MAGIC</h3>
+        <H2>Try it, feel it!</H2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie egestas malesuada congue et aliquam sit nisl facilisis proin. Vitae in fames pellentesque lacus velit. Aliquam enim sapien, </p>
+        <div class="header-top-btn-div">
+             <div class="header-top-btn">
+                <button class="button button6">EXPLORE <i class="material-icons"> arrow_forward </i></button>
+             </div>
+        </div> 
+    </div>
+</div>
+
+<div style="height: 270px;" class="suggest-div" id="close">
+    <div class="suggest container-cust">
+        <h4>exprore our new offline class in this march 7 now </h4>
+        <p>It’s a golden opportunity to learn from experts, broaden your community and follow your passion</p>
+        <button class="button button6">APPLY NOW</button>
+        <div class="close" onclick="onClose()"><i class="material-icons">close</i></div>
+    </div>
+</div>
+
+<div style="height: 800px;" class="header-top-categories">
+    <div class="categories-begin">
+        <h3>Via walking whale</h3>
+        <h1>Catelogies Courses</h1>
+    </div>
+    <div class="grid-categories container-cust">
+      <div class="grid-item ">
+        <a href="course.html">
+        <div class="grid-item-categories">
+             <h4>digital</h4>
+          <img src="https://via.placeholder.com/274x171">
+        </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="course.html">
+        <div class="grid-item-categories">
+            <h4>DSLR</h4>
+          <img src="https://via.placeholder.com/274x171">
+        </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="course.html">
+        <div class="grid-item-categories">
+            <h4>RETOUCHING</h4>
+          <img src="https://via.placeholder.com/274x171">
+        </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="course.html">
+        <div class="grid-item-categories">
+        <h4>LIFE STYLE</h4>
+          <img src="https://via.placeholder.com/274x171">
+        </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="course.html">
+        <div class="grid-item-categories">
+            <h4>Products</h4>
+          <img src="https://via.placeholder.com/274x171">
+        </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="course.html">
+        <div class="grid-item-categories">
+            <h4>Portrait</h4>
+          <img src="https://via.placeholder.com/274x171">
+        </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="course.html">
+        <div class="grid-item-categories">
+            <h4>Landscape</h4>
+          <img src="https://via.placeholder.com/274x171">
+        </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="course.html">
+        <div class="grid-item-categories">
+            <h4>Light</h4>
+          <img src="https://via.placeholder.com/274x171">
+        </div>
+        </a>
+      </div>
+    </div>
+</div>
+<div style="height: 1400px;" class="top-courses">
+    <div class="top-courses-head">
+        <h3>Browse our</h3>
+        <h1>top courses</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="list-span-top container-cust">
+            <span class="badge badge-secondary active">All Courses</span>
+            <span class="badge badge-secondary">Adobe Lighroom</span>
+            <span class="badge badge-secondary">Adobe Photoshop</span>
+            <span class="badge badge-secondary">Photo Editting</span>
+            <span class="badge badge-secondary">Digital</span>
+            <span class="badge badge-secondary">DSLR</span>
+        </div>
+        <div class="list-span-end">
+            <span class="badge badge-secondary">Photo Retouching</span>
+            <span class="badge badge-secondary">Life Style</span>
+            <span class="badge badge-secondary">Photographic composition</span>
+            <span class="badge badge-secondary">Portrait</span>
+            <span class="badge badge-secondary">Landscape</span>
+            <span class="badge badge-secondary">Creativity</span>
+        </div>
+    </div>
+    <div class="top-courses-body">
+        <div class="grid-categories container-cust">
+          <div class="grid-item app-div">
+            <div class="grid-item-head">
+                <div class="overlay">
+                     <a href="course_detail.html"><img class="img-play" src="./assets/img/video-play-icons2.gif" alt=""></a>
+                    <!-- <img class="img-save-1" src="./assets/img/icon/save.png"> -->
+                    <div class="img-save-1"></div>
+                </div>
+            </div>
+            <div class="grid-item-body">
+                <div class="wrraper">
+                    <p>Photo Essentials x Justin Bridges</p>
+                    <i class="material-icons">lock</i>
+                </div>
+                <a href="course_detail.html"><h4>Fundamentals of dslr photography</h4></a>
+                <div class="wrraper-end-1">
+                    <img class="img-w-1" src="./assets/img/icon/friend.png" alt="">
+                    <p class="p-w1">(2560)</p>
+                    <img class="img-w-2" src="./assets/img/icon/cmt.png" alt="">
+                    <p class="p-w2">(2980)</p>
+                </div>
+            </div>
+                <div class="wraaper-btn ban">
+                    <a href="course_detail.html">Learn more</a>
+                </div>
+          </div>
+          <div class="grid-item app-div">
+            <div class="grid-item-head">
+                <div class="overlay">
+                     <a href="course_detail.html"><img class="img-play" src="./assets/img/video-play-icons2.gif" alt=""></a>
+                    <!-- <img class="img-save-2" src="./assets/img/icon/save-active.png"> -->
+                    <div class="img-save-1"></div>
+                </div>
+            </div>
+            <div class="grid-item-body">
+                <div class="wrraper">
+                    <p>Photo Essentials x Justin Bridges</p>
+                    <h5 id="price-0">FREE</h5>
+                </div>
+                <a href="course_detail.html"><h4>Fundamentals of dslr photography</h4></a>
+                <div class="wrraper-end-1">
+                    <img class="img-w-1" src="./assets/img/icon/friend.png" alt="">
+                    <p class="p-w1">(2560)</p>
+                    <img class="img-w-2" src="./assets/img/icon/cmt.png" alt="">
+                    <p class="p-w2">(2980)</p>
+                </div>
+            </div>
+                <div class="wraaper-btn">
+                    <a href="course_detail.html">Learn more</a>
+                </div>
+          </div>
+          <div class="grid-item app-div">
+            <div class="grid-item-head">
+                <div class="overlay">
+                     <a href="course_detail.html"><img class="img-play" src="./assets/img/video-play-icons2.gif" alt=""></a>
+                     <!-- <img class="img-save-2" src="./assets/img/icon/save-active.png"> -->
+                     <div class="img-save-1"></div>
+                 </div>
+            </div>
+            <div class="grid-item-body">
+                <div class="wrraper">
+                    <p>Photo Essentials x Justin Bridges</p>
+                    <h5 id="price-0">FREE</h5>
+                </div>
+                <a href="course_detail.html"><h4>Fundamentals of dslr photography</h4></a>
+                <div class="wrraper-end-1">
+                    <img class="img-w-1" src="./assets/img/icon/friend.png" alt="">
+                    <p class="p-w1">(2560)</p>
+                    <img class="img-w-2" src="./assets/img/icon/cmt.png" alt="">
+                    <p class="p-w2">(2980)</p>
+                </div>
+            </div>
+                <div class="wraaper-btn">
+                    <a href="course_detail.html">Learn more</a>
+                </div>
+          </div>
+          <div class="grid-item app-div">
+            <div class="grid-item-head">
+                <div class="overlay">
+                     <a href="course_detail.html"><img class="img-play" src="./assets/img/video-play-icons2.gif" alt=""></a>
+                     <!-- <img class="img-save-1" src="./assets/img/icon/save.png"> -->
+                     <div class="img-save-1"></div>
+                </div>
+            </div>
+            <div class="grid-item-body">
+                <div class="wrraper">
+                    <p>Photo Essentials x Justin Bridges</p>
+                    <i class="material-icons">lock</i>
+                </div>
+                <a href="course_detail.html"><h4>Fundamentals of dslr photography</h4></a>
+                <div class="wrraper-end-1">
+                    <img class="img-w-1" src="./assets/img/icon/friend.png" alt="">
+                    <p class="p-w1">(2560)</p>
+                    <img class="img-w-2" src="./assets/img/icon/cmt.png" alt="">
+                    <p class="p-w2">(2980)</p>
+                </div>
+            </div>
+                <div class="wraaper-btn ban">
+                    <a href="course_detail.html">Learn more</a>
+                </div>
+          </div>
+          <div class="grid-item app-div">
+            <div class="grid-item-head">
+                <div class="overlay">
+                     <a href="course_detail.html"><img class="img-play" src="./assets/img/video-play-icons2.gif" alt=""></a>
+                     <!-- <img class="img-save-2" src="./assets/img/icon/save-active.png"> -->
+                     <div class="img-save-1"></div>
+                </div>
+            </div>
+            <div class="grid-item-body">
+                <div class="wrraper">
+                    <p>Photo Essentials x Justin Bridges</p>
+                    <h5 id="price-0">FREE</h5>
+                </div>
+                <a href="course_detail.html"><h4>Fundamentals of dslr photography</h4></a>
+                <div class="wrraper-end-1">
+                    <img class="img-w-1" src="./assets/img/icon/friend.png" alt="">
+                    <p class="p-w1">(2560)</p>
+                    <img class="img-w-2" src="./assets/img/icon/cmt.png" alt="">
+                    <p class="p-w2">(2980)</p>
+                </div>
+            </div>
+                <div class="wraaper-btn">
+                    <a href="course_detail.html">Learn more</a>
+                </div>
+          </div>
+          <div class="grid-item app-div">
+            <div class="grid-item-head">
+                <div class="overlay">
+                     <a href="course_detail.html"><img class="img-play" src="./assets/img/video-play-icons2.gif" alt=""></a>
+                     <!-- <img class="img-save-2" src="./assets/img/icon/save-active.png"> -->
+                     <div class="img-save-1"></div>
+                </div>
+            </div>
+            <div class="grid-item-body">
+                <div class="wrraper">
+                    <p>Photo Essentials x Justin Bridges</p>
+                    <h5 id="price-0">FREE</h5>
+                </div>
+                <a href="course_detail.html"><h4>Fundamentals of dslr photography</h4></a>
+                <div class="wrraper-end-1">
+                    <img class="img-w-1" src="./assets/img/icon/friend.png" alt="">
+                    <p class="p-w1">(2560)</p>
+                    <img class="img-w-2" src="./assets/img/icon/cmt.png" alt="">
+                    <p class="p-w2">(2980)</p>
+                </div>
+            </div>
+                <div class="wraaper-btn">
+                    <a href="course_detail.html">Learn more</a>
+                </div>
+          </div>
+        </div>
+    </div>
+    <div class="top-courses-end">
+        <a href="course.html"><button class="btn btn-outline-light">
+            SEE ALL COURSES NOW
+        </button></a>
+    </div>
+</div>
+
+<div style="height: 800px;" class="container-cust about-us">
+    <div class="about-us-left">
+        <span class="badge badge-secondary">About Us</span>
+        <h3>Walking Whale Stories</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque non eget vulputate aenean dictum lectus malzesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque non eget vulputate aenean dictum lectus malzesuada.</p>
+        <a href="about-us.html"><h6>Read more</h6></a>
+    </div>
+    <div class="about-us-right h6">
+        <img src="./assets/img/about-us/about-us.png">
+    </div>
+</div>
+
+<div style="height: 1100px;" class="top-photographers">
+    <div class="top-photographers-begin">
+        <h3>OUR PROFESSIONAL</h3>
+        <h1>Photographers</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nulla lectus fermentum aliquet.</p>
+    </div>
+    <div class="top-photographers-body container-cust">
+        <div class="grid-container">
+          <div class="grid-item">
+            <div class="grid-item-img">
+                <a href="teacher_detail.html"><img src="./assets/img/about-us/people1.png"></a>
+            </div>
+            <div class="grid-item-div">
+                <a href="teacher_detail.html"><h4>VU MINH QUANG</h4></a>
+                <p>Photographer</p>
+                <p class="detail">Member of Viet Nam NSNA Group <br> Teacher at University of Theatre and Cinema</p>
+                <h2>01</h2>
+                <p class="border-div"></p>
+            </div>
+          </div>
+          <div class="grid-item even">
+            <div class="grid-item-img">
+                <a href="teacher_detail.html"><img src="./assets/img/about-us/people2.png"></a>
+            </div>
+            <div class="grid-item-div">
+                <a href="teacher_detail.html"><h4>NHU NGOC VUONG</h4></a>
+                <p>Photographer</p>
+                <p class="detail">Member of Viet Nam NSNA Group <br> Teacher at University of Theatre and Cinema</p>
+                <h2>02</h2>
+                <p class="border-div"></p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="grid-item-img">
+                <a href="teacher_detail.html"><img src="./assets/img/about-us/people3.png"></a>
+            </div>
+            <div class="grid-item-div">
+                <a href="teacher_detail.html"><h4>NGUYEN HONG ANH</h4></a>
+                <p>Photographer</p>
+                <p class="detail">Member of Viet Nam NSNA Group <br> Teacher at University of Theatre and Cinema</p>
+                <h2>03</h2>
+                <p class="border-div"></p>
+            </div>
+          </div>
+          <div class="grid-item even">
+            <div class="grid-item-img">
+                <a href="teacher_detail.html"><img src="./assets/img/about-us/people4.png"></a>
+            </div>
+            <div class="grid-item-div">
+                <a href="teacher_detail.html"><h4>NGUYEN MINH DUC</h4></a>
+                <p>Photographer</p>
+                <p class="detail">Member of Viet Nam NSNA Group <br> Teacher at University of Theatre and Cinema</p>
+                <h2>04</h2>
+                <p class="border-div"></p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="grid-item-img">
+                <a href="teacher_detail.html"><img src="./assets/img/about-us/people5.png"></a>
+            </div>
+            <div class="grid-item-div">
+                <a href="teacher_detail.html"><h4>TRAN QUANG SON</h4></a>
+                <p>Photographer</p>
+                <p class="detail">Member of Viet Nam NSNA Group <br> Teacher at University of Theatre and Cinema</p>
+                <h2>05</h2>
+                <p class="border-div"></p>
+            </div>
+          </div>
+          <div class="grid-item even">
+            <div class="grid-item-img">
+                <a href="teacher_detail.html"><img src="./assets/img/about-us/people6.png"></a>
+            </div>
+            <div class="grid-item-div">
+                <a href="teacher_detail.html"><h4>PHAM HUNG</h4></a>
+                <p>Photographer</p>
+                <p class="detail">Member of Viet Nam NSNA Group <br> Teacher at University of Theatre and Cinema</p>
+                <h2>06</h2>
+                <p class="border-div"></p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- <div class="top-photographers-end container-cust">
+        <button class="button button5">SEE ALL OUR TEACHERS</button>
+    </div> -->
+</div>
+
+<div style="height: 1100px;" class="event">
+    <div class="event-begin">
+        <h3>WHAT WE DO</h3>
+        <h1>In Our Class?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nulla lectus fermentum aliquet.</p>
+    </div>
+    <div class="event-body container-cust">
+        <img class="event1" src="./assets/img/event/event1.png" alt="">
+        <img class="event2" src="./assets/img/event/event2.png" alt="">
+        <img class="event3" src="./assets/img/event/event3.png" alt="">
+        <img class="event4" src="./assets/img/event/event4.png" alt="">
+        <img class="event5" src="./assets/img/event/event5.png" alt="">
+        <img class="event6" src="./assets/img/event/event6.png" alt="">
+        <img class="event7" src="./assets/img/event/event7.png" alt="">
+        <img class="event8" src="./assets/img/event/event8.png" alt="">
+        <img class="event9" src="./assets/img/event/event9.png" alt="">
+
+    </div>
+    <div class="event-end container-cust">
+         <a href="gallery.html"><button class="btn btn-outline-light">VIEW MORE</button></a>
+    </div>
+</div>
+<!-- End Body -->
+
+<div style="height: 470px;" class="inquiry container-cust">
+    <div class="inquiry-left float-left">
+        <h2>WHAT PEOPLE SAY?</h2>
+        <div class="img-div-people">
+                  <button id="prev" class="button button7 btn-back"><i class="material-icons">arrow_back</i></button>
+                  <button id="next" class="button button7 btn-forward"><i class="material-icons">arrow_forward</i></button>
+            </div>
+    </div>
+    <div class="inquiry-right">
+        <div id="featured_img">
+            <img class="img-div" id="img_change" src="./assets/img/inquiry/inquiry1.png" alt="">
+        </div>
+        <div class="map-container">
+            <div class="name-div group-text1">
+                <h4>TRAN LOI 01</h4>
+                <h6>Freelance Designer</h6>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis nam turpis nunc et nulla nunc velit. Sodales convallis viverra rhoncus adipiscing a aenean facilisis magna. Urna, placerat elit, donec velit. Quam velit blandit cursus elit elit. Sodales convallis viverra rhoncus adipiscing a aenean facilisis magna. Urna, elit, donec velit.”</p>
+            </div>
+            <div class="name-div group-text2 hide">
+                <h4>TRAN LOI 02</h4>
+                <h6>Freelance Designer</h6>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis nam turpis nunc et nulla nunc velit. Sodales convallis viverra rhoncus adipiscing a aenean facilisis magna. Urna, placerat elit, donec velit. Quam velit blandit cursus elit elit. Sodales convallis viverra rhoncus adipiscing a aenean facilisis magna. Urna, elit, donec velit.”</p>
+            </div>
+            <div class="name-div group-text3 hide">
+                <h4>TRAN LOI 03</h4>
+                <h6>Freelance Designer</h6>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis nam turpis nunc et nulla nunc velit. Sodales convallis viverra rhoncus adipiscing a aenean facilisis magna. Urna, placerat elit, donec velit. Quam velit blandit cursus elit elit. Sodales convallis viverra rhoncus adipiscing a aenean facilisis magna. Urna, elit, donec velit.”</p>
+            </div>
+            <div class="name-div group-text4 hide">
+                <h4>TRAN LOI 04</h4>
+                <h6>Freelance Designer</h6>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis nam turpis nunc et nulla nunc velit. Sodales convallis viverra rhoncus adipiscing a aenean facilisis magna. Urna, placerat elit, donec velit. Quam velit blandit cursus elit elit. Sodales convallis viverra rhoncus adipiscing a aenean facilisis magna. Urna, elit, donec velit.”</p>
+            </div>
+            <div class="name-div group-text5 hide">
+                <h4>TRAN LOI 05</h4>
+                <h6>Freelance Designer</h6>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis nam turpis nunc et nulla nunc velit. Sodales convallis viverra rhoncus adipiscing a aenean facilisis magna. Urna, placerat elit, donec velit. Quam velit blandit cursus elit elit. Sodales convallis viverra rhoncus adipiscing a aenean facilisis magna. Urna, elit, donec velit.”</p>
+            </div>
+            <div class="name-div group-text6 hide">
+                <h4>TRAN LOI 06</h4>
+                <h6>Freelance Designer</h6>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis nam turpis nunc et nulla nunc velit. Sodales convallis viverra rhoncus adipiscing a aenean facilisis magna. Urna, placerat elit, donec velit. Quam velit blandit cursus elit elit. Sodales convallis viverra rhoncus adipiscing a aenean facilisis magna. Urna, elit, donec velit.”</p>
+            </div>
+        </div>
+        <div class="list-img" id="thumb_img">
+            <ul>
+                <li>
+                    <img class="active map-point-sm" src="./assets/img/inquiry/inquiry1.png" alt="" onclick="changeImg('./assets/img/inquiry/inquiry1.png',this);" data-show=".group-text1">
+                </li>
+                <li>
+                    <img class="map-point-sm" src="./assets/img/about-us/people2.png" alt="" onclick="changeImg('./assets/img/about-us/people2.png',this);" data-show=".group-text2">
+                </li>
+                <li>
+                    <img class="map-point-sm" src="./assets/img/about-us/people3.png" alt="" onclick="changeImg('./assets/img/about-us/people3.png',this);" data-show=".group-text3">
+                </li>
+                <li>
+                    <img class="map-point-sm" src="./assets/img/about-us/people4.png" alt="" onclick="changeImg('./assets/img/about-us/people4.png',this);" data-show=".group-text4">
+                </li>
+                <li>
+                    <img class="map-point-sm" src="./assets/img/about-us/people5.png" alt="" onclick="changeImg('./assets/img/about-us/people5.png',this);" data-show=".group-text5">
+                </li>
+                <li>
+                    <img class="map-point-sm" src="./assets/img/about-us/people6.png" alt="" onclick="changeImg('./assets/img/about-us/people6.png',this);" data-show=".group-text6">
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- <div style="height: 1200px;" class="news">
+    <div class="news-begin container-cust">
+        <h3>SHARING WITH LOVE</h3>
+        <h1>Inspire Yourself</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nulla lectus fermentum aliquet.</p>
+    </div>
+    <div class="news-end container-cust">
+        <div class="news-end-left">
+            <h3>PHOTOGRAPHY AS <br> YOUR PERSONAL LIFE ODYSSEY</h3>
+            <a href="letter.html"><button class="btn btn-outline-light">READ MORE<i class="material-icons">arrow_forward</i></button></a>
+        </div>
+        <div class="news-end-right">
+            <div class="news-end-right-top">
+                <div class="news-img-div">
+                    <img src="" alt="">
+                </div>
+                <h5>PHOTOGRAPHY AS <br> YOUR PERSONAL LIFE ODYSSEY</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis malesuada est auctor non enim quis. Quis egestas sed massa at mi mollis. Lectus in eu aliquet in non. </p>
+                <a href="letter.html"><h6>Read more</h6></a>
+            </div>
+            <div class="news-end-right-bottom">
+                <div class="news-img-div">
+                    <img src="" alt="">
+                </div>
+                <h5>PHOTOGRAPHY AS <br> YOUR PERSONAL LIFE ODYSSEY</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis malesuada est auctor non enim quis. Quis egestas sed massa at mi mollis. Lectus in eu aliquet in non. </p>
+                <a href="letter.html"><h6>Read more</h6></a>
+            </div>
+        </div>
+    </div>    
+</div> -->
+
+<div style="height: 1500px;" class="news">
+    <div class="news-begin container-cust">
+        <h3>SHARING WITH LOVE</h3>
+        <h1>Inspire Yourself</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nulla lectus fermentum aliquet.</p>
+    </div>
+    <div class="news-end container-cust">
+        <div class="row">
+            <div class="col-8">
+                <div class="news-end-left">
+                    <h3>PHOTOGRAPHY AS <br> YOUR PERSONAL LIFE ODYSSEY</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis malesuada est auctor non enim quis. Quis egestas sed massa at mi mollis. Lectus in eu aliquet in non.</p>
+                    <a href="letter.html"><button class="btn btn-outline-light">READ MORE<i class="material-icons">arrow_forward</i></button></a>
+                </div>
+                <div class="news-end-left-bot">
+                    <h3>PHOTOGRAPHY AS <br> YOUR PERSONAL LIFE ODYSSEY</h3>
+                    <a href="letter.html"><button class="btn btn-outline-light">READ MORE<i class="material-icons">arrow_forward</i></button></a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="news-end-right">
+                <div class="short-article">
+                  <div class="img-div">
+                      <!-- <img src="https://via.placeholder.com/350x200" alt=""> -->
+                  </div>
+                  <div class="text-div">
+                      <h4>Photography as Your Personal Life Odyssey</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur ading elit. Quis malesuada est auctor non enim quis. Quis egestas sed massa at mi mollis. Lectus in eu aliquet in non.</p>
+                      <div class="btn-div">
+                         <a href="letter.html"><button class="button button1">READ MORE<i class="material-icons">arrow_forward</i></button></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="short-article">
+                  <div class="img-div">
+                      <!-- <img src="https://via.placeholder.com/350x200" alt=""> -->
+                  </div>
+                  <div class="text-div">
+                      <h4>Photography as Your Personal Life Odyssey</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur ading elit. Quis malesuada est auctor non enim quis. Quis egestas sed massa at mi mollis. Lectus in eu aliquet in non.</p>
+                      <div class="btn-div">
+                         <a href="letter.html"><button class="button button1">READ MORE<i class="material-icons">arrow_forward</i></button></a>
+                      </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+    </div>
+</div>
+</div>
+
+<div style="height: 460px" class="list-add container-cust">
+     <div class="grid-categories">
+          <div class="grid-item app-div">
+            <div class="grid-item-head">
+                <div class="overlay">
+                     <a href="course_detail.html"><img class="img-play" src="./assets/img/video-play-icons2.gif" alt=""></a>
+                     <img class="img-save-1" src="./assets/img/icon/save.png">
+                </div>
+            </div>
+            <div class="grid-item-body">
+                <div class="wrraper">
+                    <p>Photo Essentials x Justin Bridges</p>
+                    <i class="material-icons">lock</i>
+                </div>
+                <a href="course_detail.html"><h4>Fundamentals of dslr photography</h4></a>
+                <div class="wrraper-end-1">
+                    <img class="img-w-1" src="./assets/img/icon/friend.png" alt="">
+                    <p class="p-w1">(2560)</p>
+                    <img class="img-w-2" src="./assets/img/icon/cmt.png" alt="">
+                    <p class="p-w2">(2980)</p>
+                </div>
+            </div>
+                <div class="wraaper-btn ban">
+                    <a href="course_detail.html">Learn more</a>
+                </div>
+          </div>
+                    <div class="grid-item app-div">
+            <div class="grid-item-head">
+                <div class="overlay">
+                     <a href="course_detail.html"><img class="img-play" src="./assets/img/video-play-icons2.gif" alt=""></a>
+                     <!-- <img class="img-save-2" src="./assets/img/icon/save-active.png"> -->
+                     <div class="img-save-1"></div>
+                </div>
+            </div>
+            <div class="grid-item-body">
+                <div class="wrraper">
+                    <p>Photo Essentials x Justin Bridges</p>
+                    <h5 id="price-0">FREE</h5>
+                </div>
+                <a href="course_detail.html"><h4>Fundamentals of dslr photography</h4></a>
+                <div class="wrraper-end-1">
+                    <img class="img-w-1" src="./assets/img/icon/friend.png" alt="">
+                    <p class="p-w1">(2560)</p>
+                    <img class="img-w-2" src="./assets/img/icon/cmt.png" alt="">
+                    <p class="p-w2">(2980)</p>
+                </div>
+            </div>
+                <div class="wraaper-btn">
+                    <a href="course_detail.html">Learn more</a>
+                </div>
+          </div>
+                    <div class="grid-item app-div">
+            <div class="grid-item-head">
+                <div class="overlay">
+                     <a href="course_detail.html"><img class="img-play" src="./assets/img/video-play-icons2.gif" alt=""></a>
+                     <img class="img-save-1" src="./assets/img/icon/save.png">
+                </div>
+            </div>
+            <div class="grid-item-body">
+                <div class="wrraper">
+                    <p>Photo Essentials x Justin Bridges</p>
+                    <i class="material-icons">lock</i>
+                </div>
+                <a href="course_detail.html"><h4>Fundamentals of dslr photography</h4></a>
+                <div class="wrraper-end-1">
+                    <img class="img-w-1" src="./assets/img/icon/friend.png" alt="">
+                    <p class="p-w1">(2560)</p>
+                    <img class="img-w-2" src="./assets/img/icon/cmt.png" alt="">
+                    <p class="p-w2">(2980)</p>
+                </div>
+            </div>
+                <div class="wraaper-btn ban">
+                    <a href="course_detail.html">Learn more</a>
+                </div>
+          </div>
+      </div>
+</div>
+<div class="message">
+    <img src="./assets/img/icon/message.png" alt="">
+</div>
+<!-- modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+        <div class="login modal-content">
+        <div class="wrapper">
+            <div class="wrapper-left float-left">
+                <h3>hello, friend!</h3>
+                <p>Enter your personal details and start journey with us</p>
+                <button class="button button6" data-toggle="modal" data-target="#sign-up">Sign up</button>
+            </div>
+            <div class="wrapper-right float-left">
+                <img class="close close-modal" data-dismiss="modal" aria-label="Close" src="./assets/img/icon/close.png" alt="">
+                <h5>Sign in to Walking Whale</h5>
+                <button class="btn btn-connect"><img src="./assets/img/icon/facebook1.png" alt="">Connect with Facebook</button>
+                <h6 class="line-left"></h6>
+                <p>Or</p>
+                <h6 class="line-right"></h6>
+                <form>
+                <div class="form-div">
+                      <div class="form-group">
+                        <label for="formGroupExampleInput">Usename</label>
+                        <input type="text" class="form-control" placeholder="Walkingwhale04">
+                      </div>
+                      <div class="form-group">
+                        <label for="formGroupExampleInput2">Password</label>
+                        <input type="text" class="form-control" placeholder="+8 character">
+                      </div>
+                </div>
+                <button class="btn button4 sign-in">Sign in</button>
+                <a href="#"><p class="f-password">Forgot password?</p></a>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                  </div>
+                <a href="#"><p class="new-account">Create a new account?</p></a>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+    <footer>
+        <div class="container-cust footer-card-img text-center">
+            <div class="footer-card-img-text">
+                <h2>get start your free month</h2>
+                <h5>Unlimited access to thousands of our Courses</h5>
+                <a href="#"><button class="btn btn-outline-light footer-card-img-btn">GO PREMIUM</button></a>
+            </div>
+        </div>
+        <div class="footer-background-block">
+            <div class="container-cust">
+                <div class="footer-block">
+                    <div class="row footer-block-content">
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="footer-title">
+                                        Phone
+                                    </div>
+                                    <div class="footer-detail">
+                                        +84 0123 456 789
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="footer-title">
+                                        Mail
+                                    </div>
+                                    <div class="footer-detail">
+                                        walking.whale@gmail.com
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-top: 40px;">
+                                <div class="col">
+                                    <div class="footer-title">
+                                        Address
+                                    </div>
+                                    <div class="footer-detail">
+                                        80 truc khe <br/>
+                                        nguyen chi thanh, hanoi
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="footer-title">
+                                        Follow us
+                                    </div>
+                                    <div class="footer-detail">
+                                        <ul class="social-media-list">
+                                            <li><a href="#"><img src="./assets/img/icon/facebook-color.png" alt="Facebook" title="Facebook"></a></li>
+                                            <li><a href="#"><img src="./assets/img/icon/youtube-color.png" alt="Youtube" title="Youtube"></a></li>
+                                            <li><a href="#"><img src="./assets/img/icon/instagram-color.png" alt="Instagram" title="Instagram"></a></li>
+                                            <li><a href="#"><img src="./assets/img/icon/twitter-color.png" alt="Twitter" title="Twitter"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row footer-subcribe">
+                                <div class="col">
+                                    <div class="footer-subcribe-title">
+                                        Subscribe to news
+                                    </div>
+                                    <div class="footer-subcribe-subtitle">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </div>
+                                    <div style="padding-top: 5px;">
+                                        <input style="padding-left: 18px;" class="footer-email " type="email" placeholder="Enter your email">
+                                        <button class="btn footer-submit-email">Send</button>
+                                    </div>
+                                    <div class="form-check footer-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">I agree with terms</label>
+                                    </div>
+                                    <div style="padding-top: 10px; color: #AAAAAA; font-size: 14px; line-height: 22px;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor si
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div>
+                                <img src="assets/img/logo-footer.png" alt="logo-footer">
+                            </div>
+                            <div class="footer-description">
+                                    Walking Whale was built with the positioning to become a pioneer in providing advertising photography training services in Vietnam. It is the gathering place of leading experts along the job network, career exchange for the community. Thereby, empowering and awareness of the profession of photography for society and aesthetic development for the public.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+        </div>  
+    </footer>
+</body>
+<script type="text/javascript">
+    $('#sign-up').on('shown.bs.modal', function () {
+        console.log('1');
+    })
+</script>
+</html>
